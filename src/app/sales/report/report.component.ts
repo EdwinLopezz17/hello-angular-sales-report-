@@ -7,18 +7,20 @@ import {DatePipe} from "@angular/common";
   styleUrls: ['./report.component.css']
 })
 export class ReportComponent implements OnInit{
-  title = 'Sales Report';
+  title = 'Sales Report (Zepol)';
   createAt: Date = new Date();
   subtitle ='';
+
   constructor(private datePipe: DatePipe) {
 
   }
   ngOnInit() {
-    this.salesDate();
+   this.salesDate();
   }
 
   salesDate(): void{
-    this.subtitle= `$\{this.title} of ${this.datePipe.transform(this.createAt, 'short')}`;
-
+    this.subtitle= `${this.title} of ${this.datePipe.transform(this.createAt, 'short')}`;
   }
+
+
 }

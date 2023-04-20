@@ -15,6 +15,7 @@ import { ReportComponent } from './sales/report/report.component';
   imports: [
     BrowserModule
   ],
+  //se agrego DataPipe para dar formato a fechas
   providers: [DatePipe],
   bootstrap: [AppComponent]
 })

@@ -26,7 +26,7 @@ export class ItemListComponent {
 
   updateDate():void{
     this.date = new Date();
-    this.simpleDate = this.datePipe.transform(this.date, 'short');
     this.longDate = this.datePipe.transform(this.date, 'long');
+    this.simpleDate = this.datePipe.transform(this.date, 'short');
   }
 }
